@@ -1,0 +1,19 @@
+{
+	"name": "enigma.js",
+	"version": "0.1.0",
+	"description": "Enigma Machine in Javascript",
+	"main": "index.js",
+	"scripts": {
+		"start": "node --experimental-specifier-resolution=node --no-warnings index",
+		"lint": "eslint --fix ."
+	},
+	"repository": "https://github.com/thealphareturns/enigma.js",
+	"author": "TheAlphaReturns",
+	"license": "GPL-3.0",
+	"private": false,
+	"dependencies": {
+		"eslint": "^8.17.0",
+		"prompt-sync": "^4.2.0"
+	},
+	"type": "module"
+}

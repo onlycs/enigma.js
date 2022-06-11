@@ -1,0 +1,25 @@
+{
+	"env": {
+		"es2022": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 13,
+		"sourceType": "module"
+	},
+	"rules": {
+		"indent": [ "warn", "tab", { "SwitchCase": 1 } ],
+		"quotes": [ "error", "single" ],
+		"semi": [ "error", "always" ],
+		"no-unused-vars": "off",
+		"getter-return": "off",
+		"no-constant-condition": "off",
+		"no-use-before-define": "error",
+		"no-var": "error",
+		"camelcase": 1,
+		"default-case-last": "error"
+	}
+}
