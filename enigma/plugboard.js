@@ -13,6 +13,10 @@ class Plugboard {
 		delete this.plugs[this.plugs[from]];
 	}
 
+	removeAllPlugs() {
+		this.plugs = {};
+	}
+
 	encode(letter) {
 		return this.plugs[letter] || letter;
 	}

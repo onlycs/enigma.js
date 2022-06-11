@@ -2,6 +2,7 @@ import Plugboard from './enigma/plugboard';
 import rotors from './enigma/rotor';
 import Reflector from './enigma/reflector';
 import promptSync from 'prompt-sync';
+import plugboard from './enigma/plugboard';
 
 const [RotorI, RotorII, RotorIII] = rotors();
 const prompt = promptSync();
@@ -85,6 +86,7 @@ class UI {
 
 			switch (choice) {
 				case '1': {
+					console.clear();
 					console.log(`${'---'.repeat(10)}\n`);
 					let letter1 = prompt('1st letter (A-Z): ');
 					let letter2 = prompt('2nd letter (A-Z): ');
@@ -100,7 +102,6 @@ class UI {
 					}
 
 					this.enigma.plugboard.addPlug(letter1, letter2);
-
 					break;
 				}
 				case '2': {
@@ -181,4 +182,5 @@ while (true) {
 	if (ui.exit) {
 		break;
 	}
+	plugboard.removeAllPlugs();
 }
